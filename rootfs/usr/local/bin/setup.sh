@@ -30,6 +30,17 @@ cat > $CONFIGFILE <<EOF;
   'memcache.local' => '\OC\Memcache\APCu',
 
   'instanceid' => '$instanceid',
+EOF
+if [[ ! -z "$THEME"  ]]; then
+  cat >> $CONFIGFILE <<EOF;
+  # Add name of the theme.
+  'theme'         => '${THEME}',
+EOF
+  # Add link to the theme.
+  wget ${NEXTCLOUD_THEME_LINK} -O theme.tar.gz
+  tar -xzf theme.tar.gz -C /nextcloud/themes
+fi
+cat >> $CONFIGFILE <<EOF;
 );
 ?>
 EOF
