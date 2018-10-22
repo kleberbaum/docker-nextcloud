@@ -29,9 +29,8 @@ RUN echo "## Installing base ##" \
     apk upgrade --update-cache --available \
     ; \
     apk add --no-cache --virtual=build-dependencies \
-        bash@main \
+        bash \
         gnupg \
-        tar \
         build-base \
         autoconf \
         automake \
