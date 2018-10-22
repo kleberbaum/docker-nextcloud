@@ -29,10 +29,10 @@ RUN echo "## Installing base ##" \
     apk upgrade --update-cache --available \
     ; \
     apk add --no-cache --virtual=build-dependencies \
-        bash \
-        gnupg \
-        tar \
-        build-base \
+        bash@main \
+        gnupg@main \
+        tar@main \
+        build-base@main \
         autoconf \
         automake \
         pcre-dev \
