@@ -30,7 +30,7 @@ RUN echo "## Installing base ##" \
     ; \
     apk add --no-cache --virtual=build-dependencies \
         bash@main \
-        gnupg@main \
+        gnupg \
         tar@main \
         build-base \
         autoconf \
