@@ -47,9 +47,9 @@ RUN echo "## Installing base ##" \
         tini@community \
     ; \
     pecl install \
-        smbclient@main \
-        apcu@main \
-        redis@main \
+        smbclient \
+        apcu \
+        redis \
     \
     && echo "extension=smbclient.so" > /php/conf.d/smbclient.ini \
     && echo "extension=redis.so" > /php/conf.d/redis.ini \
