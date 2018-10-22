@@ -29,21 +29,21 @@ RUN echo "## Installing base ##" \
     apk upgrade --update-cache --available \
     ; \
     apk add --no-cache --virtual=build-dependencies \
-        bash@main \
-        gnupg@main \
-        tar@main \
-        build-base@main \
+        bash \
+        gnupg \
+        tar \
+        build-base \
         autoconf \
-        automake@main \
-        pcre-dev@main \
-        libtool@main \
-        samba-dev@main \
+        automake \
+        pcre-dev \
+        libtool \
+        samba-dev \
     ; \
     apk add --force \
-        libressl@main \
-        ca-certificates@main \
-        libsmbclient@main \
-        tzdata@main \
+        libressl \
+        ca-certificates \
+        libsmbclient \
+        tzdata \
         tini@community \
     ; \
     pecl install \
