@@ -33,7 +33,7 @@ RUN echo "## Installing base ##" \
         gnupg@main \
         tar@main \
         build-base@main \
-        autoconf@main \
+        autoconf \
         automake@main \
         pcre-dev@main \
         libtool@main \
